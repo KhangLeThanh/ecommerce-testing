@@ -1,5 +1,5 @@
-import chai from'chai';
-import divide from'./divide.js';
+import chai from "chai";
+import divide from "./divide.js";
 
 const expect = chai.expect
 
