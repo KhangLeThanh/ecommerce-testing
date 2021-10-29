@@ -2,9 +2,10 @@
   "name": "ecommerce-testing",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "nyc mocha *.test.js --exit",
+    "test": "nyc mocha src/*.test.js --exit --require esm",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
@@ -19,7 +20,8 @@
   },
   "homepage": "https://github.com/KhangLeThanh/ecommerce-testing#readme",
   "dependencies": {
-    "chai": "^4.3.4"
+    "chai": "^4.3.4",
+    "esm": "^3.2.25"
   },
   "devDependencies": {
     "coveralls": "^3.1.1",
