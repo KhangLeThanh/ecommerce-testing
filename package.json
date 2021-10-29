@@ -2,9 +2,10 @@
   "name": "ecommerce-testing",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "nyc mocha *.test.js --exit",
+    "test": "nyc mocha src/*.test.js --exit",
     "coverage": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
