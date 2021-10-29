@@ -1,0 +1,30 @@
+{
+  "name": "ecommerce-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "nyc mocha *.test.js --exit",
+    "coverage": "nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhangLeThanh/ecommerce-testing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhangLeThanh/ecommerce-testing/issues"
+  },
+  "homepage": "https://github.com/KhangLeThanh/ecommerce-testing#readme",
+  "dependencies": {
+    "chai": "^4.3.4"
+  },
+  "devDependencies": {
+    "coveralls": "^3.1.1",
+    "mocha": "^9.1.3",
+    "mocha-lcov-reporter": "^1.3.0",
+    "nyc": "^15.1.0"
+  }
+}
