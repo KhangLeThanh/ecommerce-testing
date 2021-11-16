@@ -52,4 +52,4 @@ describe("Filter", () => {
         expect(filter(food, ({ sale }) => sale )).to.deep.equal(food)
     });
    
-   })
+})
