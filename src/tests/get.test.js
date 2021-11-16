@@ -18,8 +18,8 @@ describe("Get", () => {
         expect(get(object, 'a.b.c', null)).to.equal(null)
     });
     
-    it("returns default value when object is null and default value is not defined", () =>{
-        expect(get(null, 'a.b.c')).to.equal(undefined)
+    it("returns wanted default value when object is null", () =>{
+        expect(get(null, 'a.b.c', null)).to.equal(null)
     });
 
     it("returns default value when path is not found and default value is not defined", () =>{
