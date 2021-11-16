@@ -24,4 +24,12 @@ describe("Add", () => {
     expect(add(0,3.54)).to.equal(3.54)
  });
 
+ it("adds two bigger numbers", () =>{
+   expect(add(100000,2345)).to.equal(102345)
+ });
+
+ it("adds a big and a small number", () =>{
+   expect(add(-1234567,1234567)).to.equal(0)
+ });
+
 })
