@@ -18,7 +18,7 @@ describe("Ceil", () => {
    });
 
    it("rounds up a negative fraction", () =>{
-   expect(ceil(-3/2,0)).to.equal(-1)
+      expect(ceil(-3/2,0)).to.equal(-1)
    });
 
    it("rounds up zero with a second parameter", () =>{
