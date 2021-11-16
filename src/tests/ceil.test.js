@@ -30,7 +30,7 @@ describe("Ceil", () => {
    });
 
    it("rounds up integer with higher negative second parameter", () =>{
-      expect(ceil(-3,-4)).to.equal(-2)
+      expect(ceil(-3,-4)).to.equal(0)
    });
    
 })
