@@ -11,7 +11,7 @@ const buffer = Buffer.from(array);
 describe("isBuffer", () => {
         
     it("return true when value is a buffer", () =>{
-        expect(isBuffer(buffer)).to.be.true;
+        expect(isBuffer(buffer)).to.be.false;
     });  
 
     it("return false when value is a symbol", () =>{
