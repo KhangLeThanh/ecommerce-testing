@@ -6,11 +6,10 @@ const symbol = Symbol('hello');
 const text = "not running"
 const object ={a:1, b:2}
 const array = [{a:1}, {b:2}];
-const buffer = Buffer.from(array);
 
 describe("isBuffer", () => {
     it("return true when value is a buffer", () =>{
-        expect(isBuffer(buffer)).to.be.false;
+        expect(isBuffer(Buffer.alloc(2))).to.be.false;
     });  
     it("return false when value is a symbol", () =>{
         expect(isBuffer(symbol)).to.be.false;
