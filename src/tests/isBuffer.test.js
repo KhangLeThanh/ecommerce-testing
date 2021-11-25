@@ -9,7 +9,7 @@ const array = [{a:1}, {b:2}];
 
 describe("isBuffer", () => {
     it("return true when value is a buffer", () =>{
-        expect(isBuffer(Buffer.alloc(2))).to.be.false;
+        expect(isBuffer(Buffer.alloc(2))).to.be.true;
     });  
     it("return false when value is a symbol", () =>{
         expect(isBuffer(symbol)).to.be.false;
