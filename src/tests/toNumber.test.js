@@ -4,12 +4,12 @@ import isObject from '../isObject.js'
 import isSymbol from '../isSymbol.js'
 const expect = chai.expect
 const mySymbol = Symbol('hello');
-
+const value = 0;
+function myFunction() {
+    return 2;   
+}
 describe("toNumber", () => {
 
-    before(function() {
-        // runs once before the first test in this block
-      });
     it("converting a string to a number", () =>{
         expect(toNumber('3.2')).to.eql(3.2);
     });  
@@ -32,4 +32,9 @@ describe("toNumber", () => {
             expect(toNumber(mySymbol)).to.be.NaN;
         }
     });
+    it("if type of value is not a string", () =>{
+        expect(toNumber(null)).to.eql(0);    
+    });
+  
+   
 })
