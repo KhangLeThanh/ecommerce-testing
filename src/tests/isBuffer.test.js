@@ -33,7 +33,7 @@ describe("isBuffer", () => {
     });
 
     it("return false when value is null", () =>{
-        expect(isBuffer(null)).to.be.false;
+        expect(Buffer.isBuffer(null)).to.be.false;
     }); 
 
 })
